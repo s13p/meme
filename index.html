@@ -16,6 +16,47 @@
     <link href="./static/css/main.1885f84b.css" rel="stylesheet">
     <style></style>
     <style>
+			@keyframes shake {
+		0% {
+		  transform: translate(0, 0);
+		}
+		10% {
+		  transform: translate(-1px, 1px) rotate(-1deg);
+		}
+		20% {
+		  transform: translate(1px, -1px) rotate(1deg);
+		}
+		30% {
+		  transform: translate(-2px, 2px) rotate(-2deg);
+		}
+		40% {
+		  transform: translate(2px, -2px) rotate(2deg);
+		}
+		50% {
+		  transform: translate(-2px, -1px) rotate(-1deg);
+		}
+		60% {
+		  transform: translate(2px, 1px) rotate(1deg);
+		}
+		70% {
+		  transform: translate(-1px, -2px) rotate(-2deg);
+		}
+		80% {
+		  transform: translate(1px, 2px) rotate(2deg);
+		}
+		90% {
+		  transform: translate(0, 0);
+		}
+		100% {
+		  transform: translate(0, 0);
+		}
+	  }
+	   .bodzy { animation: shake 3s infinite !important;
+	   max-width: 100vw !important; }
+	   .bodzycrazy { animation: shake 2s infinite, flash .2s infinite alternate !important;
+	   max-width: 100vw !important; }
+	</style>
+    <style>
         body, html {
           margin: 0;
           padding: 0;
@@ -79,7 +120,7 @@
                                                 
             ">ENTER</button>
           </div>
-        <div id="main-content" class="  App">
+        <div id="main-content" class=" bodzy App">
             <div class="bounce">
                 <div class="el-wrap x"><img class="el y" src="./Uusi_mene_hd.png"></div>
             </div>
