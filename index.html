@@ -88,7 +88,7 @@
             </div>
 
             <body >
-                <div></div><audio autoplay="true" loop="true">
+                <div></div><audio id="background-audio" autoplay="true" loop="true">
                     <source src="./y2mate_is_Uusi_mene_on_syntynyt_fTUIbZUe7Bs_128k_1695143500.mp3" type="audio/mp3">Your browser does not
                     support the audio element.
                 </audio>
@@ -127,11 +127,12 @@
         </div>
     </div>
     <script>
-        document.querySelector('.enter-button').addEventListener('click', function() {
-          document.getElementById('landing-page').style.display = 'none';
-          document.getElementById('main-content').style.display = 'block';
-        });
-      </script>
+      document.querySelector('.enter-button').addEventListener('click', function() {
+        document.getElementById('landing-page').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+        document.getElementById('background-audio').play();
+      });
+    </script>
 </body>
 
 </html>
